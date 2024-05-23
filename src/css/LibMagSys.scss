@@ -1,0 +1,24 @@
+.libmagsys {
+    background-color: green;
+
+
+    .libmagsys_container {
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .project_div {
+            background-color: yellow;
+            width: 25%;
+            
+        }
+
+        .project_description {
+            background-color: red;
+            text-align: right;
+            
+        }
+    }
+}
