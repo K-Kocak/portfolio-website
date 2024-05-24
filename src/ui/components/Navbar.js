@@ -19,6 +19,7 @@ class Navbar extends React.Component{
                         <p>Small Projects</p>
                     </div>
                 </div>
+                
             </div>
         );
     }

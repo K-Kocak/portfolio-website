@@ -11,7 +11,7 @@ $shadow: ();
 @for $i from 1 through $meteor_count {
     $vertical_offset: random(100) - 100;
     $horizontal_offset: random(170) - 70;
-    $duration: random(70)/10 + 8;
+    $duration: calc(random(70) / 10) + 8;
     .meteor-#{$i} {
         position: absolute;
         top: $vertical_offset + px;
@@ -157,5 +157,10 @@ $shadow: ();
             }
         }       
     }   
+}
+
+.divider {
+    height: 60px;
+    background: linear-gradient(#3b2f4a 80%, #16161d);
 }
 

@@ -1,3 +1,5 @@
+$smallproject_count: 12;
+
 .smallprojects {
     display: flex;
 
@@ -15,14 +17,43 @@
             width: 100%;
             margin: 20px;
             //
-            height: 300px;
+            height: 400px;
             //
             
             .project_item {
-                width: 100%;
+                width: 400px;
+                margin: 0px auto;
                 display: flex;
-                justify-content: center;
+                height: 100%;
                 align-items: center;
+                flex-direction: column;
+                
+                
+
+                @for $i from 1 through $smallproject_count {
+                    .project_item_#{$i} img {
+                       
+                        max-width: 400px;
+                    }
+
+                    .project_item_#{$i} {
+                        
+                    }
+    
+                    .project_description_#{$i} {
+                        max-width: 400px;
+                        background-color: white;
+                        padding: 3px;
+                        margin: 0px;
+                        position: relative;
+                        top: 10px;
+                        z-index: -1;
+                        opacity: 0.5;
+                    }
+
+                    
+                }
+                
             }
         }
     }

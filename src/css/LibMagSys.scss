@@ -1,8 +1,11 @@
 .libmagsys {
-    background-color: green;
-
-
+    
     .libmagsys_container {
+        border-top: 2px solid #16161d;
+        border-bottom: 2px solid #16161d;
+        
+        color: white;
+        background: linear-gradient(-90deg, #16161d 1%, #1f1f3a, #2A2A4F 66%);
         height: 600px;
         display: flex;
         flex-direction: row;
@@ -10,15 +13,75 @@
         justify-content: space-evenly;
 
         .project_div {
-            background-color: yellow;
-            width: 25%;
+            font-family: Garamond, serif;
             
         }
 
-        .project_description {
-            background-color: red;
-            text-align: right;
+        .project_div.project_picture {
+            width: 40%;
+            margin-left: 50px;
+            border-radius: 60px;
+            overflow: hidden;
+            transition: all 0.2s linear;
+
+            &:hover {
+                border-radius: 40px;
+                transform: scale(1.1);
+            }
             
+            img {
+                z-index: -1;
+            }
+        }
+
+        .project_div.github_icon {
+            width: 20%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 55px;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                i {
+                    transform: scale(1.2);
+                    transition: all 0.1s linear;
+
+                    &:hover {
+                        transform: scale(1.4);
+                    }
+                }
+            }
+
+        }
+
+        .project_div.project_description {
+            width: 40%;
+            margin-right: 20px;
+        }
+
+        .project_description {         
+            text-align: right;
+            height: 100%;
+            display: flex;
+            flex-direction: column;           
+            justify-content: center;
+
+            .project_description_title {
+                font-size: 55px;
+            }
+
+            .project_description_content {
+                font-size: 24px;
+            }
+            
+        }
+
+        img {
+            max-width: 100%;
         }
     }
 }
