@@ -2,7 +2,7 @@
     
     .libmagsys_container {
         border-top: 2px solid #16161d;
-        border-bottom: 2px solid #16161d;
+        border-bottom: 5px solid #3b2f4a;
         
         color: white;
         background: linear-gradient(-90deg, #16161d 1%, #1f1f3a, #2A2A4F 66%);
@@ -11,6 +11,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        padding-bottom: 50px;
+            
 
         .project_div {
             font-family: Garamond, serif;
