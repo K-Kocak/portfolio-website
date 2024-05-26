@@ -1,0 +1,67 @@
+.footer {
+    background: linear-gradient(-90deg,#0B0B0B, #1f1f3a, #2A2A4F, #0B0B0B );
+    border-top: 1px solid black;
+    
+    .footer_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+        max-height: 110px;
+        filter: drop-shadow(5px 0px 20px rgba(255,255,255, 0.25));
+
+        .back_to_top {
+            font-size: 30px;
+            a {
+                text-decoration: none;
+                color: white;
+                scroll-behavior: smooth !important;
+                font-family: Garamond, serif;
+                filter: drop-shadow(0px 0px 10px rgba(255,0,0, 1));
+                transition: all 0.1s linear;
+
+                &:hover {
+                    font-size: 35px;
+                }
+            }
+            
+        }
+
+        .links {          
+            
+
+
+
+            a {
+                text-decoration: none;
+                color: white;
+                margin: 0px auto;
+                
+                
+                i.fa-brands.fa-github {
+                    font-size: 53px;
+                    transition: all 0.2s linear;
+                    padding: 15px;
+                    margin-right: 10px;
+
+                    &:hover {
+                        
+                        transform: scale(1.4);
+                    }
+                }                   
+                i.fa-brands.fa-linkedin {
+                    font-size: 55px;
+                    transition: all 0.2s linear;
+                    padding: 15px;
+
+                    &:hover {
+                        transform: scale(1.4);
+                    }
+                }                              
+            }  
+        }
+    }
+
+}
+

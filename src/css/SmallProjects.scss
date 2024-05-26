@@ -5,7 +5,7 @@ $smallproject_count: 12;
     
 
     .smallprojects_container {
-        padding-bottom: 10px;
+        padding-bottom: 50px;
         width: 100%;
         display: flex;
         flex-direction: column;   
@@ -14,10 +14,28 @@ $smallproject_count: 12;
         h1 {
             color: white;
             padding-top: 20px;
+            font-size: 45px;
             text-align: center;
             filter: drop-shadow(5px 0px 20px rgba(255,255,255, 0.25));
         }
+
+        span {
+            color: white;
+            font-size: 13px;
+            margin: 0px;
+            margin-top: -25px;
+            margin-bottom: 30px;
+        }
         font-family: Garamond, serif;
+
+
+        @media screen and (max-width: 1000px) {
+            .projects_row {
+                flex-direction: column !important;
+                height: auto !important;
+            }
+            
+        }
 
         .projects_row {
             
@@ -46,7 +64,7 @@ $smallproject_count: 12;
                 i.fab.fa-js {
                     position: relative;
                     top: -137px;
-                    left: -175px;
+                    left: -220px;
                     z-index: 3;
                     transform: scale(2.1);
                     color: yellow;
@@ -57,7 +75,7 @@ $smallproject_count: 12;
                 i.fa-brands.fa-react {
                     position: relative;
                     top: -195px;
-                    left: -175px;
+                    left: -220px;
                     z-index: 3;
                     transform: scale(2.0);
                     color: #61dbfb;
@@ -71,8 +89,8 @@ $smallproject_count: 12;
 
                 .csharp {
                     position: relative;
-                    top: -146px;
-                    left: -165px;
+                    top: -120px;
+                    left: -220px;
                     z-index: 3;
                     font-size: 30px;
                     font-weight: 800;
@@ -119,7 +137,7 @@ $smallproject_count: 12;
                         text-decoration: none;
                         position: relative;
                         top: -120px;
-                        left: 180px;
+                        left: 220px;
                         color: black;
                         z-index: 3;
                         transition: all 0.2s linear;

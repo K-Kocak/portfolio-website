@@ -7,15 +7,13 @@ class Footer extends React.Component {
         return (
             <div id="footer" className="footer">
                 <div className="footer_container">
-                    <div className="rights">
-                        <p>All Rights Reserved.</p>
-                    </div>
+                    
                     <div className="links">
-                        <p>Linkedin Link</p>
-                        <p>Github Link</p>
+                    <a href={"https://github.com/K-Kocak"} target="_blank" rel="noreferrer"><i className="fa-brands fa-github" ></i></a>
+                    <a href={"https://www.linkedin.com/in/kemal-kocak-951982247/"} target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
                     </div>
                     <div className="back_to_top">
-                        <p>Back To Top</p>
+                        <a href="#header">Back To Top</a>
                     </div>
                 </div>
             </div>

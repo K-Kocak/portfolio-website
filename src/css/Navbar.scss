@@ -19,26 +19,33 @@
     justify-content: space-between;
     gap: 10px;
     max-width: 1200px;
+    
 
-        .navigationbar_page {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding: 25px;
-        transition: all 0.2s ease;
+        a {
+            
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            }
+
+            .navigationbar_page {
+                p {
+                    color: white;
+                    user-select: none;
+                    margin: 0;
+                    filter: drop-shadow(5px 0px 20px rgba(255,255,255, 0.25));
+                }
+        }
+
         
-
-        &:hover {
-            background: rgba(0, 0, 0, 0.8);
-        cursor: pointer;
-        }
-
-        p {
-            color: white;
-            user-select: none;
-            margin: 0;
-        }
         }      
     }
 }

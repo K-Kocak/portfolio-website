@@ -1,9 +1,12 @@
 .libmagsys {
-    
+    @media screen and (max-width: 1000px) {
+        .libmagsys_container {
+            flex-direction: column-reverse !important;
+        }
+    }
+
     .libmagsys_container {
-        border-top: 2px solid #16161d;
-        border-bottom: 5px solid #3b2f4a;
-        
+        border-top: 2px solid #16161d;     
         color: white;
         background: linear-gradient(-90deg, #16161d 1%, #1f1f3a, #2A2A4F 66%);
         height: 600px;
@@ -12,12 +15,33 @@
         align-items: center;
         justify-content: space-evenly;
         padding-bottom: 50px;
-            
 
         .project_div {
-            font-family: Garamond, serif;
-            
+            font-family: Garamond, serif;      
         }
+
+        @media screen and (max-width: 1000px) {
+
+            
+            .project_div.project_picture {
+                visibility: hidden;
+                width: 0px;
+                height: 0px;
+                position: absolute;   
+            }
+            .project_div.project_description {
+                margin-right: 0px !important;
+                text-align: center;
+                width: 70% !important;
+                p {                  
+                    margin-top: 0px;
+                    padding: 0px;
+                }
+                
+            }
+        }
+
+        
 
         .project_div.project_picture {
             width: 40%;
@@ -25,6 +49,7 @@
             border-radius: 60px;
             overflow: hidden;
             transition: all 0.2s linear;
+            background-color: transparent;
 
             &:hover {
                 border-radius: 40px;
@@ -38,10 +63,8 @@
 
         .project_div.github_icon {
             width: 20%;
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 70px;
+            text-align: center;
             font-size: 55px;
 
             a {
@@ -72,6 +95,11 @@
             flex-direction: column;           
             justify-content: center;
 
+            span {
+                font-weight: 800;
+                filter: drop-shadow(5px 0px 20px rgba(255,255,255, 0.25));
+            }
+
             .project_description_title {
                 font-size: 55px;
             }
@@ -87,3 +115,4 @@
         }
     }
 }
+

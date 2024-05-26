@@ -25,8 +25,10 @@ class SmallProjects extends React.Component {
     render(){
         return(
             <div id="smallprojects" className="smallprojects">
+                
                 <div className="smallprojects_container">
-                    <h1>Click the images of the projects to learn a little more about them.</h1>
+                    <h1>Small Projects Gallery</h1>
+                    <span>(Click on the picture of the small project to learn what it's about.)</span>
                     <div className="projects_row">
 
                         <div className="project_item">
@@ -39,8 +41,8 @@ class SmallProjects extends React.Component {
                                     
                             </div>  
                             <a href={"https://github.com/K-Kocak/25-plus-5-Clock"} target="_blank" rel="noreferrer"><i className="fa-brands fa-github" ></i></a>    
-                            <i class="fab fa-js"></i>    
-                            <i class="fa-brands fa-react"></i>
+                            <i className="fab fa-js"></i>    
+                            <i className="fa-brands fa-react"></i>
 
                         </div>
 
@@ -66,8 +68,8 @@ class SmallProjects extends React.Component {
                                 <p>It's your usual Calculator App, but with a bit more advanced display for your equations and being able to chain equations together, made in JavaScript plus React.</p>    
                             </div>  
                             <a href={"https://github.com/K-Kocak/Javascript-Calculator"} target="_blank" rel="noreferrer"><i className="fa-brands fa-github" ></i></a> 
-                            <i class="fab fa-js"></i>    
-                            <i class="fa-brands fa-react"></i>                           
+                            <i className="fab fa-js"></i>    
+                            <i className="fa-brands fa-react"></i>                           
                         </div>
                         <div className="project_item">
                         <div onClick={this.slideDescriptionOut}className="project_item_4">
@@ -78,8 +80,8 @@ class SmallProjects extends React.Component {
                                 <p>The Tenzi dice game made with JavaScript and React, where your goal is to have all ten die be the same number to win.</p>
                             </div> 
                             <a href={"https://github.com/K-Kocak/tenzies"} target="_blank" rel="noreferrer"><i className="fa-brands fa-github" ></i></a> 
-                            <i class="fab fa-js"></i>    
-                            <i class="fa-brands fa-react"></i>
+                            <i className="fab fa-js"></i>    
+                            <i className="fa-brands fa-react"></i>
                         </div>                  
                     </div>
                     <div className="projects_row">
@@ -92,8 +94,8 @@ class SmallProjects extends React.Component {
                                 <p>A simple game where you must eat the balls that are of one particular colour, while avoiding the all the other balls of different colour.</p>    
                             </div>   
                             <a href={"https://github.com/K-Kocak/SquareEatGame"} target="_blank" rel="noreferrer"><i className="fa-brands fa-github" ></i></a>  
-                            <i class="fab fa-js"></i>    
-                            <i class="fa-brands fa-react"></i>                        
+                            <i className="fab fa-js"></i>    
+                            <i className="fa-brands fa-react"></i>                        
                         </div>
                         <div className="project_item">
                         <div onClick={this.slideDescriptionOut}className="project_item_6">
@@ -104,8 +106,8 @@ class SmallProjects extends React.Component {
                                 <p>A drum machine where clicking on the lettered buttons will play a drum sound. This also supports keyboard input aswell.</p>
                             </div>  
                             <a href={"https://github.com/K-Kocak/Drum-Machine"} target="_blank" rel="noreferrer"><i className="fa-brands fa-github" ></i></a> 
-                            <i class="fab fa-js"></i>    
-                            <i class="fa-brands fa-react"></i>
+                            <i className="fab fa-js"></i>    
+                            <i className="fa-brands fa-react"></i>
                         </div>                  
                     </div>
                     <div className="projects_row">
@@ -118,8 +120,8 @@ class SmallProjects extends React.Component {
                                 <p>A random quote machine. It displays a random quote and who said it from an API, with a button to get new quotes and to tweet the quote.</p>    
                             </div>     
                             <a href={"https://github.com/K-Kocak/Random-Quote-Machine"} target="_blank" rel="noreferrer"><i className="fa-brands fa-github" ></i></a>   
-                            <i class="fab fa-js"></i>    
-                            <i class="fa-brands fa-react"></i>                      
+                            <i className="fab fa-js"></i>    
+                            <i className="fa-brands fa-react"></i>                      
                         </div>
                         <div className="project_item">
                         <div onClick={this.slideDescriptionOut}className="project_item_8">
@@ -129,9 +131,9 @@ class SmallProjects extends React.Component {
                             <div className="project_description_8">
                                 <p>A Markdown Previewer with an editor window to place your plain text with a Preview window to view the results of your plain text in Markdown.</p>
                             </div>  
-                            <a href={"https://codepen.io/Cyonic1/pen/RwmwbKv"} target="_blank" rel="noreferrer"><i class="fa fa-codepen"></i></a> 
-                            <i class="fab fa-js"></i>    
-                            <i class="fa-brands fa-react"></i>
+                            <a href={"https://codepen.io/Cyonic1/pen/RwmwbKv"} target="_blank" rel="noreferrer"><i className="fa fa-codepen"></i></a> 
+                            <i className="fab fa-js"></i>    
+                            <i className="fa-brands fa-react"></i>
                         </div>                  
                     </div>
                     

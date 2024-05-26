@@ -7,17 +7,25 @@ class Navbar extends React.Component{
         return(
             <div id="navbar" className="navigationbar">
                 <div className="navigationbar_container">
-                    <div className="navigationbar_page">
-                        <p>Home</p>
-                    </div>
-                    <div className="navigationbar_page">
-                        <p>
-                            Library Management System
-                        </p>
-                    </div>
-                    <div className="navigationbar_page">
-                        <p>Small Projects</p>
-                    </div>
+                    <a href="#header">
+                        <div className="navigationbar_page">
+                            <p>Home</p>
+                        </div>
+                    </a>
+                    <a href="#libmagsys">
+                        <div className="navigationbar_page">
+                            
+                                <p>
+                                    Library Management System
+                                </p>
+                            
+                        </div>
+                    </a>
+                    <a href="#smallprojects">
+                        <div className="navigationbar_page">
+                            <p>Small Projects</p>
+                        </div>
+                    </a>
                 </div>
                 
             </div>
